@@ -6,11 +6,12 @@
 /*}*/
 
 html {
-    background: #F5F5F5;
+    /*background: ;*/
 }
 
 body {
-    font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+    /*font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;*/
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
     color: #333;
     margin: 0;
     padding: 0;

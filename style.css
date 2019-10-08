@@ -1,6 +1,5 @@
 
 /********项目**css动画********/
-
 section li {
     transition: all 0.2s linear;
 }
@@ -54,10 +53,6 @@ header {
 }
 
 /*右边*/
-#top_rt > span > b {
-    font-family: icomoon;
-}
-
 
 #top_rt > span {
     display: inline-block;
@@ -86,11 +81,11 @@ nav {
 
 #nav ul li {
     float: left;
-    padding-left: 10px;
-    font-size: 15px;
+    padding-left: 17px;
+    font-size: 16px;
 }
 
-/****搜索框***/
+    /****搜索框***/
 #search {
     width: 296px;
     height: 51px;
@@ -132,7 +127,7 @@ nav {
 }
 
 
-/****搜索框下拉菜单***/
+    /****搜索框下拉菜单***/
 #search > .search_box {
     width: 240px;
     border: 1px solid #FF6700;
@@ -150,7 +145,7 @@ nav {
 
 
 
-/*********导航弹出框****************/
+/*********导航弹出框***********/
 #nav_product ul {
     width: 100%;
     height: 230px;
@@ -159,7 +154,13 @@ nav {
 }
 
 
-/*33333333333333333333*第三部分**banner*33333333333333333333333333333333333333333333**/
+/***banner***/
+#banner {
+    width: 1230px;
+    position: relative;
+    margin: 0 auto;
+}
+
 #banner:before {
     content: "";
     display: block;
@@ -173,7 +174,7 @@ nav {
     width: 235px;
     background: #666666;
     position: absolute;
-    top: 138px;
+    top: 0px;
 }
 
 #category ul {
@@ -181,7 +182,7 @@ nav {
 }
 
 #category ul li {
-    padding: 12px;
+    padding: 12px 25px;
     cursor: pointer;
 }
 
@@ -201,38 +202,37 @@ nav {
     float: right;
 }
 
-/*/!**广告轮播序号***!/*/
-/*#banner div.pot{position:relative;}*/
-/*#banner div.pot>ul{position:absolute;top:-41px;right:31px;}*/
-/*#banner div.pot>ul li{float:left;width:6px;height:6px;border:2px solid #939393;*/
-/*border-radius:10px;margin:10px;background:#8F8F8F;cursor:pointer;}*/
-/*#banner div.pot>ul li:hover{background:#fff;}*/
-/*******左边banner菜单弹出框******/
-#category_right {
-    position: relative;
-}
-
-#category_right > ul {
-    width: 800px;
-    height: 456px;
-    border: 1px solid red;
-    position: absolute;
-    bottom: 5px;
-    right: 195px;
+#banner #category_nav {
     display: none;
+    position: absolute;
+    top: 0px;
+    left: 235px;
+    height: 460px;
+    width: 991px;
+    background-color: white;
 }
 
-#category_right > ul li {
-    margin: 0px;
+#banner #category_nav ul li {
+    height: 76.6px;
 }
 
-#category_right > ul li b {
+#banner #category_nav ul li a{
+    line-height: 76.6px;
+    box-sizing: border-box;
+    padding-left: 30px;
     display: inline-block;
-    width: 54px;
-    height: 54px;
+    width: 24%;
 }
 
-/***********banner bottom************/
+#banner #category_nav ul li a img{
+    vertical-align: middle;
+}
+/***********banner底部************/
+
+#banner_btm {
+    padding-top: 15px;
+}
+
 #banner_btm ul {
     width: 233px;
     height: 170px;
@@ -275,6 +275,111 @@ nav {
     padding-right: 1px;
 }
 
+.main {
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+
+/*******小米闪购开始*******/
+.plain-box {
+    width: 1230px;
+    margin: 30px auto;
+    height: 398px;
+    /*background-color: pink;*/
+}
+
+.plain-box .box-top {
+    height: 59px;
+    /*background-color: pink;*/
+}
+
+
+.plain-box .box-top .title {
+    display: block;
+    height: 59px;
+    font: 25px sans-serif ;
+    line-height: 59px;
+    font-weight: 200;
+}
+
+.plain-box .box-down {
+    height: 340px;
+}
+
+.box-down .row {
+    background-color: white;
+    border-top: 1px solid red;
+    height: 100%;
+    width: 234px;
+}
+
+.box-down .left{
+    background-color: #f1eded;
+    text-align: center;
+}
+
+.box-down .left .round{
+    font-size: 22px;
+    color: #ef3a3b;
+    padding-top: 50px;
+}
+
+.box-down .left div:nth-of-type(2){
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+    padding-top: 35px;
+}
+
+.box-down .left div:nth-of-type(3) {
+    width: 168px;
+    margin: 28px 0 0 50px;
+}
+
+.box-down .left div:nth-of-type(3) span{
+    width: 46px;
+    height: 46px;
+    background: #605751;
+    color: #fff;
+    font-size: 24px;
+    line-height: 46px;
+    float: left;
+}
+.box-down .left img {
+    padding-top: 30px;
+}
+.box-down .right .row {
+    text-align: center;
+}
+.box-down .right .row img {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 170px;
+    height: 170px;
+}
+
+.box-down .right .row div:nth-of-type(1) {
+    margin: 0 20px 3px;
+    font-size: 14px;
+    text-align: center;
+}
+.box-down .right .row div:nth-of-type(2) {
+    height: 18px;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 15px;
+    color: #b0b0b0;
+}
+.box-down .right .row div:nth-of-type(3) {
+    text-align: center;
+}
+.box-down .right .row div:nth-of-type(3) span {
+    color: #ff6709;
+}
+
+.box-down .right .row:nth-child(n-1) {
+    margin-right: 11px;
+}
 /*444444444444444444444444444444444444444**SECTION*******444444444444444444444444444444***/
 section {
     border: 1px solid #F5F5F5;
@@ -613,27 +718,40 @@ ul.rt_li li {
     color: #B0B0B0;
 }
 
-/**555555555555555555555555555555555第五部分55555**55 客户服务5555555555555555555******/
+/*********小米售后**********/
+#Customer {
+    width: 1230px;
+    margin: 0 auto;
+    background: white;
+}
+
+#Customer > ul {
+    border-bottom: 1px solid #e0e0e0;
+}
+
 #Customer > ul li {
     float: left;
-    padding-left: 45px;
+    padding-left: 55px;
     height: 56px;
     line-height: 56px;
     font-size: 19px;
 }
 
+#Customer > ul li a {
+    font-size: 16px;
+    font-weight: 100px;
+}
+
 #Customer > ul > span {
-    font-size: 15px;
+    font-size: 16px;
     float: left;
-    padding-left: 66px;
+    padding-left: 55px;
     color: #B0B0B0;
 }
 
 #Customer > ul {
-    height: 56px;
-    line-height: 56px;
-    float: left;
-    width: 1230px;
+    height: 65px;
+    line-height: 65px;
 }
 
 #hps ul {
@@ -647,7 +765,13 @@ ul.rt_li li {
     padding-right: 45px;
 }
 
+#hps ul.help > li h4 {
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
 #hps ul li a {
+    color: #757575;
     display: block;
     margin: 10px 0 0;
     font-size: 12px;
@@ -679,7 +803,7 @@ ul.rt_li li {
     height: 200px;
 }
 
-/**66666666666666666666666666第六部分 footer66666666666666666666666666666666666666*****/
+/******** 小米备案   ********/
 #ft {
     background: #FAFAFA;
     width: 100%;
@@ -688,10 +812,11 @@ ul.rt_li li {
 }
 
 #footer {
+    width: 1230px;
     border: 1px solid #FAFAFA;
     clear: both;
     height: 56px;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 #footer:before {
@@ -703,10 +828,12 @@ ul.rt_li li {
 #footer > p {
     width: 57px;
     height: 57px;
+    margin-right: 10px;
     background: url(images/logo-footer.png) no-repeat;
 }
 
 #footer div.lt {
+
     font-size: 12px;
 }
 
@@ -717,10 +844,13 @@ ul.rt_li li {
 #footer div.rt {
     margin-top: 16px;
 }
-
-div.btm {
+#ft .info-links {
+    position: relative;
     width: 1230px;
-    clear: both;
+    top: 20px;
+    right: 783px;
+}
+div.btm {
     margin: 30px 615px;
     height: 19px;
     background: url(images/slogan2016.png) no-repeat;
