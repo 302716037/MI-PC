@@ -1,0 +1,63 @@
+/*初始化样式*/
+
+/*header, nav, #banner, section, #movies, #Customer, #footer {*/
+/*    width: 1230px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+html {
+    background: #F5F5F5;
+}
+
+body {
+    font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, p, h1, h2, h3, h4, h5, h6, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+input {
+    outline: none;
+}
+
+/*清除点击时的边框*/
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF6700;
+    text-decoration: none;
+}
+
+/*右浮动*/
+.rt {
+    float: right;
+}
+/*左浮动*/
+.lt {
+    float: left;
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+
+
+
