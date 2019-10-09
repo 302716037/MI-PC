@@ -8,5 +8,12 @@ $(function () {
             $('.right-bar a:last-child').css('display','none')
         }
     })
+    $('#category ul li').mouseenter(() => {
+        $('#category_nav').css('display','block')
+    })
+    $('#category ul li').mouseleave(() => {
+        $('#category_nav').css('display','none')
+
+    })
     // $('.right-bar')
 })
