@@ -1,10 +1,10 @@
 /*广告图片数组*/
 var imgs=[
 	{"i":0,"img":"picture/banner_01.gif"},
-  {"i":1,"img":"picture/banner_2.gif"},
-  {"i":2,"img":"picture/banner_3.gif"},
-  {"i":3,"img":"picture/banner_4.gif"},
-  {"i":4,"img":"picture/banner_5.gif"}
+  	{"i":1,"img":"picture/banner_2.gif"},
+  	{"i":2,"img":"picture/banner_3.gif"},
+  	{"i":3,"img":"picture/banner_4.gif"},
+  	{"i":4,"img":"picture/banner_5.gif"}
 ];
 var slider={//封装广告轮播所需的所有属性和方法
 	LIWIDTH:0,//保存每个li的宽度

@@ -1,13 +1,14 @@
-<!DOCRYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>仿小米PC端官网</title>
     <meta charset="utf-8">
-    <meta name="description" content="小米商城直营小米公司旗下所有产品，包括小米手机系列小米CC9 美图手机定制版、小米9、小米MIX Alpha，Redmi 红米系列Redmi K20 Pro、Redmi Note 8，小米电视、笔记本、米家智能家居等，同时提供小米客户服务及售后支持">
+    <meta name="description"
+          content="小米商城直营小米公司旗下所有产品，包括小米手机系列小米CC9 美图手机定制版、小米9、小米MIX Alpha，Redmi 红米系列Redmi K20 Pro、Redmi Note 8，小米电视、笔记本、米家智能家居等，同时提供小米客户服务及售后支持">
     <meta name="keswords" content="小米,RedmiNote8Pro,小米cc9,Redmi K20,美图手机,小米MIX Alpha,小米商城">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="style.css"/>
-    <script src="./js/jquery.min.js"></script>
     <link rel="stylesheet" href="css/myPlugin.css">
     <link rel="stylesheet" href="css/slider.css"/>
 </head>
@@ -15,37 +16,39 @@
 
 <!--顶部Top开始-->
 <header>
-        <div id="top" class="clearfix">
-                <ul id="top_lt" class="clearfix lt">
-                    <li><a href="">小米商城</a><b>|</b></li>
-                    <li><a href="">MIUI</a><b>|</b></li>
-                    <li><a href="">loT</a><b>|</b></li>
-                    <li><a href="">云服务</a><b>|</b></li>
-                    <li><a href="">金融</a><b>|</b></li>
-                    <li><a href="">有品</a><b>|</b></li>
-                    <li><a href="">小爱开放平台</a><b>|</b></li>
-                    <li><a href="">企业团购</a><b>|</b></li>
-                    <li><a href="">资质证照</a><b>|</b></li>
-                    <li><a href="">协议规则</a><b>|</b></li>
-                    <li><a href="">下载app</a><b>|</b></li>
-                    <li><a href="">Select&nbsp;Region</a></li>
-                </ul>
-            <div id="top_rt" class="rt">
-                <a href="html/user_login.html">登录</a><b>|</b>
-                <a href="html/user_register.html">注册</a><b>|</b>
-                <a href="">消息通知</a>
-                <span>
-                    <b>---</b>
-                    <a href="">购物车</a>
+    <div id="top" class="clearfix">
+        <ul id="top_lt" class="clearfix lt">
+            <li><a href="">小米商城</a><b>|</b></li>
+            <li><a href="">MIUI</a><b>|</b></li>
+            <li><a href="">loT</a><b>|</b></li>
+            <li><a href="">云服务</a><b>|</b></li>
+            <li><a href="">金融</a><b>|</b></li>
+            <li><a href="">有品</a><b>|</b></li>
+            <li><a href="">小爱开放平台</a><b>|</b></li>
+            <li><a href="">企业团购</a><b>|</b></li>
+            <li><a href="">资质证照</a><b>|</b></li>
+            <li><a href="">协议规则</a><b>|</b></li>
+            <li><a href="">下载app</a><b>|</b></li>
+            <li><a href="">Select&nbsp;Region</a></li>
+        </ul>
+        <div id="top_rt" class="rt">
+            <a href="html/user_login.html">登录</a><b>|</b>
+            <a href="html/user_register.html">注册</a><b>|</b>
+            <a href="">消息通知</a>
+            <span>
+                    <div class="fa fa-cart-plus" ></div>
+                    <a href="">
+                        购物车
+                    </a>
                     <span>(0)</span>
                 </span>
-            </div>
-
         </div>
+
+    </div>
 </header>
 <!--顶部Top结束-->
 
-<!--导航开始-->
+<!--导航topNav开始-->
 <nav id="topNav">
     <div id="nav">
 
@@ -53,8 +56,8 @@
         <div class="lt">
             <img src="images/logo.png"/>
         </div>
-
-        <ul>
+        <!-----nav------>
+        <ul style="overflow: hidden">
             <li><a href="">小米手机</a></li>
             <li><a href="">Redmi 红米</a></li>
             <li><a href="">电视</a></li>
@@ -65,13 +68,13 @@
             <li><a href="">服务</a></li>
             <li><a href="">社区</a></li>
         </ul>
-
+        <!--  search  -->
         <div id="search" class="rt">
             <input type="search"/>
-            <div class="button"></div>
+            <div class="button 	fa fa-search"></div>
             <!----搜索框下拉菜单--->
             <div class="search_box">
-                <ul>
+                <ul class="clearfix">
                     <li><a href="">小米手机5<span>约有11件</span></a>
                     </li>
                     <li><a href="">空气净化器2<span>约有1件</span></a>
@@ -88,23 +91,9 @@
             </div>
         </div>
 
-
-        <!-------js两个手机的动画------->
-        <!-- <p>
-            <img src="picture/nav_phone1.png"/>
-            <img src="picture/nav_phone2.png"/>
-        </p> -->
-        <!-----nav--->
-
-    </div>
-    <!----------做nav的弹出框---------------->
-    <div id="nav_product">
-        <ul>
-
-        </ul>
     </div>
 </nav>
-<!--导航结束-->
+<!--导航topNav结束-->
 
 <!--banner开始-->
 <div id="banner">
@@ -245,28 +234,28 @@
 
     <!--------banner底部img--------->
     <div id="banner_btm" class="clearfix">
-    <ul class="lt">
-        <li><a href=""><i></i>选购手机</a></li>
-        <li><a href=""><i></i>企业团购</a></li>
-        <li><a href=""><i></i>官翻产品</a></li>
-        <li><a href=""><i></i>小米移动</a></li>
-        <li><a href=""><i></i>以旧换新</a></li>
-        <li><a href=""><i></i>话费充值</a></li>
-    </ul>
-    <a href="" class="lt">
-        <img src="picture/banner_btm1.gif"/>
-    </a>
-    <a href="" class="lt">
-        <img src="picture/banner_btm2.gif"/>
-    </a>
-    <a href="" class="rt">
-        <img src="picture/banner_btm3.gif"/>
-    </a>
+        <ul class="lt">
+            <li><a href=""><i></i>选购手机</a></li>
+            <li><a href=""><i></i>企业团购</a></li>
+            <li><a href=""><i></i>官翻产品</a></li>
+            <li><a href=""><i></i>小米移动</a></li>
+            <li><a href=""><i></i>以旧换新</a></li>
+            <li><a href=""><i></i>话费充值</a></li>
+        </ul>
+        <a href="" class="lt">
+            <img src="picture/banner_btm1.gif"/>
+        </a>
+        <a href="" class="lt">
+            <img src="picture/banner_btm2.gif"/>
+        </a>
+        <a href="" class="rt">
+            <img src="picture/banner_btm3.gif"/>
+        </a>
 
+    </div>
 </div>
-</div>
 
-
+<!--主体开始-->
 <div class="main">
 
     <!--*******小米闪购开始*******-->
@@ -285,7 +274,7 @@
                     <span>00</span>
                 </div>
             </div>
-            <div class="right rt clearfix" >
+            <div class="right rt clearfix">
                 <div class="row lt ">
                     <img src="./images/小米闪购.jpg" alt="">
                     <div>高品质多功能头戴耳机</div>
@@ -328,1197 +317,994 @@
     </div>
     <!--*******小米闪购结束*******-->
 
-    <!--******小米售后开始*******-->
-    <footer id="Customer">
-        <ul class="">
+    <!--*******智能硬件开始*********-->
+    <div id="product_hardware" class="clearfix">
+        <a class="rt" href="">查看全部<b>&gt;</b></a>
+        <h2>智能硬件</h2>
+        <a class="prHe" href=""><img src="picture/product_hardware_01.jpg"></a>
+        <ul id="hardware" class="clearfix">
             <li>
-                <a href=""><span></span>预约维修服务</a>
+                <div></div>
+                <a href=""><img src="picture/product_hardware_02.jpg"></a>
+                <h4><a href="">小米路由器3</a></h4>
+                <p>四线设计，更安全更稳定</p>
+                <span>&yen;149元</span>
             </li>
-            <span>丨</span>
             <li>
-                <a href=""><span></span>7天无理由退货</a>
+                <div></div>
+                <a href=""><img src="picture/product_hardware_03.jpg"></a>
+                <h4><a href="">电助力折叠自行车</a></h4>
+                <p>力矩传感电助力，折叠便携设计</p>
+                <span>&yen;2999元</span>
             </li>
-            <span>丨</span>
             <li>
-                <a href=""><span></span>15天免费换货</a>
+                <div></div>
+                <a href=""><img src="picture/product_hardware_04.jpg"></a>
+                <h4><a href="">小米VR眼睛玩具版</a></h4>
+                <p>观看新体验，期待总于意料之外</p>
+                <span>&yen;49元</span>
             </li>
-            <span>丨</span>
-            <li>
-                <a href=""><span></span>满150元包邮</a>
+
+            <li class="no_banner">
+                <a href=""><img src="picture/product_hardware_05.jpg"></a>
+                <h4><a href="">九号平衡车</a></h4>
+                <p>年轻人的酷玩具，骑行遥控两种玩法</p>
+                <span>&yen;1999元</span>
             </li>
-            <span>丨</span>
             <li>
-                <a href=""><span></span>520余家售后网点</a>
+                <div></div>
+                <a href=""><img src="picture/product_hardware_06.jpg"></a>
+                <h4><a href="">米兔智能故事机</a></h4>
+                <p>宝又不好好吃饭，让米兔来哄宝宝吧</p>
+                <span>&yen;199元</span>
+            </li>
+            <li>
+                <div></div>
+                <a href=""><img src="picture/product_hardware_07.jpg"></a>
+                <h4><a href="">米家压力IH电饭煲</a></h4>
+                <p>IH电磁环绕加热，让米粒在锅中跳舞</p>
+                <span>&yen;999元</span>
+            </li>
+            <li>
+                <div></div>
+                <a href=""><img src="picture/product_hardware_08.jpg"></a>
+                <h4><a href="">小米笔记本Air12.5英寸</a></h4>
+                <p>更轻更薄，想杂志一样随身携带</p>
+                <span>&yen;3499元</span>
+            </li>
+            <li>
+                <div></div>
+                <a href=""><img src="picture/product_hardware_09.jpg"></a>
+                <h4><a href="">米家&nbsp;LED&nbsp;智能台灯</a></h4>
+                <p>无可视频闪，亮度色温无级调节</p>
+                <span>&yen;169元</span>
             </li>
         </ul>
-        <div id="hps">
-            <div class="rt">
-                <div>400-100-5678</div>
-                <p>周一至周日 8:00-18:00</p>
-                <p>（仅收市话费）</p>
-                <a href="#" class="hv">
-                    <img src="picture/24h_03.jpg">
-                </a>
-            </div>
-            <ul class="help">
-                <li>
-                    <h4>帮助中心</h4>
-                    <a href="">账户管理</a>
-                    <a href="">购物指南</a>
-                    <a href="">订单操作</a>
-                </li>
-                <li>
-                    <h4>服务支持</h4>
-                    <a href="">售后政策</a>
-                    <a href="">自助服务</a>
-                    <a href="">相关下载</a>
-                </li>
-                <li>
-                    <h4>线下门店</h4>
-                    <a href="">小米之家</a>
-                    <a href="">服务网点</a>
-                    <a href="">零售网点</a>
-                </li>
-                <li>
-                    <h4>关于小米</h4>
-                    <a href="">了解小米</a>
-                    <a href="">加入小米</a>
-                    <a href="">联系我们</a>
-                </li>
-                <li>
-                    <h4>关注我们</h4>
-                    <a href="">新浪微博</a>
-                    <a href="">小米部落</a>
-                    <a href="">官方微信</a>
-                </li>
-                <li>
-                    <h4>特色服务</h4>
-                    <a href="">F码通道</a>
-                    <a href="">小米移动</a>
-                    <a href="">防伪查询</a>
-                </li>
+    </div>
+    <!--*******智能硬件结束*********-->
+
+    <!--******搭配开始******-->
+    <div id="pd_match" class="pd_match clearfix">
+        <div class="top">
+            <ul class="rt">
+                <li><a href="#tc1">热门</a></li>
+                <li><a href="#tc2">耳机音响</a></li>
+                <li><a href="#tc3">电源</a></li>
+                <li><a href="#tc4">电池存储器</a></li>
             </ul>
+            <h2 class="lt">搭配</h2>
         </div>
-    </footer>
-    <!--******小米售后开始*******-->
+        <ul id="tc1" class="rt_li">
+            <a class="lt" href="#"><img src="picture/left_01.jpg"></a>
+            <li>
+                <a href=""><img src="picture/product_match_01.gif"></a>
+                <h4><a href="">小米移动电源10000mAH</a></h4>
+                <span>&yen;79元</span>
+                <p>19.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_02.gif"></a>
+                <h4><a href="">小米圈铁耳机</a></h4>
+                <span>&yen;99元</span>
+                <p>1.7万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_03.gif"></a>
+                <h4><a href="">小米移动电源10000mAH
+                    高配版</a></h4>
+                <span>&yen;149元</span>
+                <p>2.3万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_04.gif"></a>
+                <h4><a href="">小米蓝牙耳机</a></h4>
+                <span>&yen;69元<s>70元</s></span>
+                <p>19.6万人评价</p>
+            </li>
+            <a class="lt" href="#"><img src="picture/left_02.gif"></a>
+            <li>
+                <a href=""><img src="picture/product_match_05.gif"></a>
+                <h4><a href="">小米插线板</a></h4>
+                <span>&yen;49元</span>
+                <p>25.2万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_06.gif"></a>
+                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>
+                <span>&yen;129元</span>
+                <p>1.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_07.gif"></a>
+                <h4><a href="">小米移动电源5000mAH</a></h4>
+                <span>&yen;49元</span>
+                <p>9.1万人评价</p>
+            </li>
+            <li>
+                <div>
+                    <a class="rt" href=""><img src="./picture/right_01.gif"></a>
+                    <span><a href="#">小米钢炮.....</a></span>
+                    <p>99元 </p>
+
+                </div>
+                <div>
+                    <a class="rt" href=""><img src="picture/right_00.gif"></a>
+                    <h3><a href="#">浏览更多</a></h3>
+                    <p>热门 </p>
+                </div>
+            </li>
+        </ul>
+        <ul id="tc2" class="rt_li">
+            <a class="lt" href="#"><img src="picture/left_01.jpg"></a>
+            <li>
+                <a href=""><img src="picture/product_match_01.gif"></a>
+                <h4><a href="">小米移动2</a></h4>
+                <span>&yen;79元</span>
+                <p>19.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_02.gif"></a>
+                <h4><a href="">小米圈2</a></h4>
+                <span>&yen;99元</span>
+                <p>1.7万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_03.gif"></a>
+                <h4><a href="">小米移动2
+                    高配版</a></h4>
+                <span>&yen;149元</span>
+                <p>2.3万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_04.gif"></a>
+                <h4><a href="">小米蓝牙2</a></h4>
+                <span>&yen;69元<s>70元</s></span>
+                <p>19.6万人评价</p>
+            </li>
+            <a class="lt" href="#"><img src="picture/left_02.gif"></a>
+            <li>
+                <a href=""><img src="picture/product_match_05.gif"></a>
+                <h4><a href="">小米插线板</a></h4>
+                <span>&yen;49元</span>
+                <p>25.2万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_06.gif"></a>
+                <h4><a href="">小米小钢炮22</a></h4>
+                <span>&yen;129元</span>
+                <p>1.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_07.gif"></a>
+                <h4><a href="">小米移动2H</a></h4>
+                <span>&yen;49元</span>
+                <p>9.1万人评价</p>
+            </li>
+            <li>
+                <div>
+                    <a class="rt" href=""><img src="picture/right_01.gif"></a>
+                    <span><a href="#">小2.....</a></span>
+                    <p>99元 </p>
+
+                </div>
+                <div>
+                    <a class="rt" href=""><img src="picture/right_00.gif"></a>
+                    <h3><a href="#">浏览更多</a></h3>
+                    <p>热门 </p>
+                </div>
+            </li>
+        </ul>
+        <ul id="tc3" class="rt_li">
+            <a class="lt" href="#"><img src="picture/left_01.jpg"></a>
+            <li>
+                <a href=""><img src="picture/product_match_06.gif"></a>
+                <h4><a href="">小米移动电3H</a></h4>
+                <span>&yen;79元</span>
+                <p>19.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_07.gif"></a>
+                <h4><a href="">小米3</a></h4>
+                <span>&yen;99元</span>
+                <p>1.7万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_05.gif"></a>
+                <h4><a href="">小米3H
+                    高配版</a></h4>
+                <span>&yen;149元</span>
+                <p>2.3万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_03.gif"></a>
+                <h4><a href="">小米蓝3机</a></h4>
+                <span>&yen;69元<s>70元</s></span>
+                <p>19.6万人评价</p>
+            </li>
+            <a class="lt" href="#"><img src="picture/left_02.gif"></a>
+            <li>
+                <a href=""><img src="picture/product_match_04.gif"></a>
+                <h4><a href="">小3板</a></h4>
+                <span>&yen;49元</span>
+                <p>25.2万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_02.gif"></a>
+                <h4><a href="">小米小3响2</a></h4>
+                <span>&yen;129元</span>
+                <p>1.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_01.gif"></a>
+                <h4><a href="">小米移动电3AH</a></h4>
+                <span>&yen;49元</span>
+                <p>9.1万人评价</p>
+            </li>
+            <li>
+                <div>
+                    <a class="rt" href=""><img src="picture/right_01.gif"></a>
+                    <span><a href="#">小米3.....</a></span>
+                    <p>99元 </p>
+
+                </div>
+                <div>
+                    <a class="rt" href=""><img src="picture/right_00.gif"></a>
+                    <h3><a href="#">浏览3多</a></h3>
+                    <p>热门 </p>
+                </div>
+            </li>
+        </ul>
+        <ul id="tc4" class="rt_li">
+            <a class="lt" href="#"><img src="picture/left_01.jpg"></a>
+            <li>
+                <a href=""><img src="picture/product_match_02.gif"></a>
+                <h4><a href="">小米移动4</a></h4>
+                <span>&yen;79元</span>
+                <p>19.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_04.gif"></a>
+                <h4><a href="">小米4机</a></h4>
+                <span>&yen;99元</span>
+                <p>1.7万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_05.gif"></a>
+                <h4><a href="">小米移4H
+                    高配版</a></h4>
+                <span>&yen;149元</span>
+                <p>2.3万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_04.gif"></a>
+                <h4><a href="">小米蓝4</a></h4>
+                <span>&yen;69元<s>70元</s></span>
+                <p>19.6万人评价</p>
+            </li>
+            <a class="lt" href="#"><img src="picture/left_02.gif"></a>
+            <li>
+                <a href=""><img src="picture/product_match_05.gif"></a>
+                <h4><a href="">小米4板</a></h4>
+                <span>&yen;49元</span>
+                <p>25.2万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_05.gif"></a>
+                <h4><a href="">小米小钢4音响2</a></h4>
+                <span>&yen;129元</span>
+                <p>1.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_match_04.gif"></a>
+                <h4><a href="">小米移动4mAH</a></h4>
+                <span>&yen;49元</span>
+                <p>9.1万人评价</p>
+            </li>
+            <li>
+                <div>
+                    <a class="rt" href=""><img src="picture/right_01.gif"></a>
+                    <span><a href="#">小米4.</a></span>
+                    <p>99元 </p>
+
+                </div>
+                <div>
+                    <a class="rt" href=""><img src="picture/right_00.gif"></a>
+                    <h3><a href="#">浏览更多</a></h3>
+                    <p>热门 </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--******搭配结束******-->
+
+    <!--******配件开始******-->
+    <div class="pd_match clearfix" >
+        <div class="top">
+            <ul class="rt">
+                <li><a href="#pj1">热门</a></li>
+                <li><a href="#pj2">保护套</a></li>
+                <li><a href="#pj3">贴膜</a></li>
+                <li><a href="#pj4">其他配件</a></li>
+            </ul>
+            <h2 class="lt">配件</h2>
+        </div>
+        <ul id="pj1" class="rt_li">
+            <a class="lt" href="#"><img src="picture/left_03.gif"></a>
+            <li>
+                <a href=""><img src="picture/product_accessories_07.gif"></a>
+                <h4><a href="">小米移动电源10000mAH</a></h4>
+                <span>&yen;79元</span>
+                <p>19.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_accessories_06.gif"></a>
+                <h4><a href="">小米圈铁耳机</a></h4>
+                <span>&yen;99元</span>
+                <p>1.7万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_accessories_05.gif"></a>
+                <h4><a href="">小米移动电源10000mAH
+                    高配版</a></h4>
+                <span>&yen;149元</span>
+                <p>2.3万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_accessories_04.gif"></a>
+                <h4><a href="">小米蓝牙耳机</a></h4>
+                <span>&yen;69元<s>70元</s></span>
+                <p>19.6万人评价</p>
+            </li>
+            <a class="lt" href="#"><img src="picture/left_04.gif"></a>
+            <li>
+                <a href=""><img src="picture/product_accessories_03.gif"></a>
+                <h4><a href="">小米插线板</a></h4>
+                <span>&yen;49元</span>
+                <p>25.2万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_accessories_02.gif"></a>
+                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>
+                <span>&yen;129元</span>
+                <p>1.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/product_accessories_01.gif"></a>
+                <h4><a href="">小米移动电源5000mAH</a></h4>
+                <span>&yen;49元</span>
+                <p>9.1万人评价</p>
+            </li>
+            <li class="more-li">
+                <div>
+                    <a class="rt" href=""><img src="picture/right_01.gif"></a>
+                    <span><a href="#">小米钢炮.....</a></span>
+                    <p>99元 </p>
+
+                </div>
+                <div>
+                    <a class="rt" href=""><img src="picture/right_00.gif"></a>
+                    <h3><a href="#">浏览更多</a></h3>
+                    <p>热门 </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--******配件结束******-->
+
+    <!--******周边开始******-->
+    <div id="pd_circum" class="pd_match clearfix">
+        <div class="top">
+            <ul class="rt">
+                <li><a href="#zb1">热门</a></li>
+                <li><a href="#zb2">服装</a></li>
+                <li><a href="#zb3">米兔</a></li>
+                <li><a href="#zb4">生活周边</a></li>
+                <li><a href="#zb5">箱包</a></li>
+            </ul>
+            <h2 class="lt">周边</h2>
+        </div>
+        <ul id="zb1" class="rt_li">
+            <a class="lt" href="#"><img src="picture/left_05.gif"></a>
+            <li>
+                <a href=""><img src="picture/surrounding_07.gif"></a>
+                <h4><a href="">小米移动电源10000mAH</a></h4>
+                <span>&yen;79元</span>
+                <p>19.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_02.gif"></a>
+                <h4><a href="">小米圈铁耳机</a></h4>
+                <span>&yen;99元</span>
+                <p>1.7万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_03.gif"></a>
+                <h4><a href="">小米移动电源10000mAH
+                    高配版</a></h4>
+                <span>&yen;149元</span>
+                <p>2.3万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_04.gif"></a>
+                <h4><a href="">小米蓝牙耳机</a></h4>
+                <span>&yen;69元<s>70元</s></span>
+                <p>19.6万人评价</p>
+            </li>
+            <a class="lt" href="#"><img src="picture/left_06.jpg"></a>
+            <li>
+                <a href=""><img src="picture/surrounding_05.gif"></a>
+                <h4><a href="">小米插线板</a></h4>
+                <span>&yen;49元</span>
+                <p>25.2万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_06.gif"></a>
+                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>
+                <span>&yen;129元</span>
+                <p>1.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_07.gif"></a>
+                <h4><a href="">小米移动电源5000mAH</a></h4>
+                <span>&yen;49元</span>
+                <p>9.1万人评价</p>
+            </li>
+            <li  class="more-li">
+                <div>
+                    <a class="rt" href=""><img src="picture/right_03.gif"></a>
+                    <span><a href="#">小米钢炮.....</a></span>
+                    <p>99元 </p>
+
+                </div>
+                <div>
+                    <a class="rt" href=""><img src="picture/right_00.gif"></a>
+                    <h3><a href="#">浏览更多</a></h3>
+                    <p>热门 </p>
+                </div>
+            </li>
+        </ul>
+        <ul id="zb2" class="rt_li">
+            <a class="lt" href="#"><img src="picture/left_05.gif"></a>
+            <li>
+                <a href=""><img src="picture/surrounding_03.gif"></a>
+                <h4><a href="">小米移动电源10000mAH</a></h4>
+                <span>&yen;79元</span>
+                <p>19.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_02.gif"></a>
+                <h4><a href="">小米圈铁耳机</a></h4>
+                <span>&yen;99元</span>
+                <p>1.7万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_01.gif"></a>
+                <h4><a href="">小米移动电源10000mAH
+                    高配版</a></h4>
+                <span>&yen;149元</span>
+                <p>2.3万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_04.gif"></a>
+                <h4><a href="">小米蓝牙耳机</a></h4>
+                <span>&yen;69元<s>70元</s></span>
+                <p>19.6万人评价</p>
+            </li>
+            <a class="lt" href="#"><img src="picture/left_06.jpg"></a>
+            <li>
+                <a href=""><img src="picture/surrounding_04.gif"></a>
+                <h4><a href="">小米插线板</a></h4>
+                <span>&yen;49元</span>
+                <p>25.2万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_02.gif"></a>
+                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>
+                <span>&yen;129元</span>
+                <p>1.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_03.gif"></a>
+                <h4><a href="">小米移动电源5000mAH</a></h4>
+                <span>&yen;49元</span>
+                <p>9.1万人评价</p>
+            </li>
+            <li class="more-li">
+                <div>
+                    <a class="rt" href=""><img src="picture/right_03.gif"></a>
+                    <span><a href="#">小米钢炮.....</a></span>
+                    <p>99元 </p>
+
+                </div>
+                <div>
+                    <a class="rt" href=""><img src="picture/right_00.gif"></a>
+                    <h3><a href="#">浏览更多</a></h3>
+                    <p>热门 </p>
+                </div>
+            </li>
+        </ul>
+        <ul id="zb3" class="rt_li">
+            <a class="lt" href="#"><img src="picture/left_05.gif"></a>
+            <li>
+                <a href=""><img src="picture/surrounding_04.gif"></a>
+                <h4><a href="">小米移动电源10000mAH</a></h4>
+                <span>&yen;79元</span>
+                <p>19.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_04.gif"></a>
+                <h4><a href="">小米圈铁耳机</a></h4>
+                <span>&yen;99元</span>
+                <p>1.7万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_03.gif"></a>
+                <h4><a href="">小米移动电源10000mAH
+                    高配版</a></h4>
+                <span>&yen;149元</span>
+                <p>2.3万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_03.gif"></a>
+                <h4><a href="">小米蓝牙耳机</a></h4>
+                <span>&yen;69元<s>70元</s></span>
+                <p>19.6万人评价</p>
+            </li>
+            <a class="lt" href="#"><img src="picture/left_01.jpg"></a>
+            <li>
+                <a href=""><img src="picture/surrounding_05.gif"></a>
+                <h4><a href="">小米插线板</a></h4>
+                <span>&yen;49元</span>
+                <p>25.2万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_06.gif"></a>
+                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>
+                <span>&yen;129元</span>
+                <p>1.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_07.gif"></a>
+                <h4><a href="">小米移动电源5000mAH</a></h4>
+                <span>&yen;49元</span>
+                <p>9.1万人评价</p>
+            </li>
+            <li class="more-li">
+                <div>
+                    <a class="rt" href=""><img src="picture/right_03.gif"></a>
+                    <span><a href="#">小米钢炮.....</a></span>
+                    <p>99元 </p>
+
+                </div>
+                <div>
+                    <a class="rt" href=""><img src="picture/right_00.gif"></a>
+                    <h3><a href="#">浏览更多</a></h3>
+                    <p>热门 </p>
+                </div>
+            </li>
+        </ul>
+        <ul id="zb4" class="rt_li">
+            <a class="lt" href="#"><img src="picture/left_05.gif"></a>
+            <li>
+                <a href=""><img src="picture/surrounding_03.gif"></a>
+                <h4><a href="">小米移动电源10000mAH</a></h4>
+                <span>&yen;79元</span>
+                <p>19.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_01.gif"></a>
+                <h4><a href="">小米圈铁耳机</a></h4>
+                <span>&yen;99元</span>
+                <p>1.7万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_05.gif"></a>
+                <h4><a href="">小米移动电源10000mAH
+                    高配版</a></h4>
+                <span>&yen;149元</span>
+                <p>2.3万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_04.gif"></a>
+                <h4><a href="">小米蓝牙耳机</a></h4>
+                <span>&yen;69元<s>70元</s></span>
+                <p>19.6万人评价</p>
+            </li>
+            <a class="lt" href="#"><img src="picture/left_06.jpg"></a>
+            <li>
+                <a href=""><img src="picture/surrounding_05.gif"></a>
+                <h4><a href="">小米插线板</a></h4>
+                <span>&yen;49元</span>
+                <p>25.2万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_04.gif"></a>
+                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>
+                <span>&yen;129元</span>
+                <p>1.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_05.gif"></a>
+                <h4><a href="">小米移动电源5000mAH</a></h4>
+                <span>&yen;49元</span>
+                <p>9.1万人评价</p>
+            </li>
+            <li class="more-li">
+                <div>
+                    <a class="rt" href=""><img src="picture/right_03.gif"></a>
+                    <span><a href="#">小米钢炮.....</a></span>
+                    <p>99元 </p>
+
+                </div>
+                <div>
+                    <a class="rt" href=""><img src="picture/right_00.gif"></a>
+                    <h3><a href="#">浏览更多</a></h3>
+                    <p>热门 </p>
+                </div>
+            </li>
+        </ul>
+        <ul id="zb5" class="rt_li">
+            <a class="lt" href="#"><img src="picture/left_05.gif"></a>
+            <li>
+                <a href=""><img src="picture/surrounding_01.gif"></a>
+                <h4><a href="">小米移动电源10000mAH</a></h4>
+                <span>&yen;79元</span>
+                <p>19.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_02.gif"></a>
+                <h4><a href="">小米圈铁耳机</a></h4>
+                <span>&yen;99元</span>
+                <p>1.7万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_03.gif"></a>
+                <h4><a href="">小米移动电源10000mAH
+                    高配版</a></h4>
+                <span>&yen;149元</span>
+                <p>2.3万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_04.gif"></a>
+                <h4><a href="">小米蓝牙耳机</a></h4>
+                <span>&yen;69元<s>70元</s></span>
+                <p>19.6万人评价</p>
+            </li>
+            <a class="lt" href="#"><img src="picture/left_06.jpg"></a>
+            <li>
+                <a href=""><img src="picture/surrounding_05.gif"></a>
+                <h4><a href="">小米插线板</a></h4>
+                <span>&yen;49元</span>
+                <p>25.2万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_06.gif"></a>
+                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>
+                <span>&yen;129元</span>
+                <p>1.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/surrounding_07.gif"></a>
+                <h4><a href="">小米移动电源5000mAH</a></h4>
+                <span>&yen;49元</span>
+                <p>9.1万人评价</p>
+            </li>
+            <li class="more-li">
+                <div>
+                    <a class="rt" href=""><img src="picture/right_03.gif"></a>
+                    <span><a href="#">小米钢炮.....</a></span>
+                    <p>99元 </p>
+
+                </div>
+                <div>
+                    <a class="rt" href=""><img src="picture/right_00.gif"></a>
+                    <h3><a href="#">浏览更多</a></h3>
+                    <p>热门 </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--******周边结束******-->
+
+    <!--******为你推荐开始******-->
+    <div id="recommended" class="pd_match clearfix">
+        <div class="top">
+            <b class="rt"></b>
+            <h2 class="lt">为你推荐</h2>
+        </div>
+        <ul class="rt_li">
+
+            <li style="margin-left:0;">
+                <a href=""><img src="picture/recommended_01.gif"></a>
+                <h4><a href="">小米移动电源10000mAH</a></h4>
+                <span>&yen;79元</span>
+                <p>19.6万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/recommended_02.gif"></a>
+                <h4><a href="">小米圈铁耳机</a></h4>
+                <span>&yen;99元</span>
+                <p>1.7万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/recommended_03.gif"></a>
+                <h4><a href="">小米移动电源10000mAH
+                    高配版</a></h4>
+                <span>&yen;149元</span>
+                <p>2.3万人评价</p>
+            </li>
+            <li>
+                <a href=""><img src="picture/recommended_04.gif"></a>
+                <h4><a href="">小米蓝牙耳机</a></h4>
+                <span>&yen;69元<s>70元</s></span>
+                <p>19.6万人评价</p>
+            </li>
+            <li style="margin-left:11px;">
+                <a href=""><img src="picture/recommended_05.gif"></a>
+                <h4><a href="">小米插线板</a></h4>
+                <span>&yen;49元</span>
+                <p>25.2万人评价</p>
+            </li>
+        </ul>
+    </div>
+    <!--******为你推荐结束******-->
+
+    <!--******热评产品开始******-->
+    <div id="buzz" class="pd_match clearfix">
+        <h2>热评产品</h2>
+        <ul>
+            <li>
+                <a href="#"><img src="picture/buzz_01.gif"></a>
+                <div>
+                    <p>刚收到，外观很漂亮，颜色也很喜欢，等了好长时间了，终于拿到了，非常满意，棒棒哒！！！</p>
+                    <div>来自于&nbsp;龙炎&nbsp;的评价</div>
+                    <a href="">小米笔记本Air&nbsp;12.5英寸</a>
+                    l<span>3499元</span>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="picture/buzz_02.gif"></a>
+                <div>
+                    <p>很好！特别是，拦截功能，智能管控……随时随地知道家中网络情况……</p>
+                    <div>来自于&nbsp;HZG&nbsp;的评价</div>
+                    <a href="">小米路由器3</a>
+                    l<span>149元</span>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="picture/buzz_03.gif"></a>
+                <div>
+                    <p>包装很让人感动，式样也很可爱，做出的饭全家人都爱吃，超爱五星！手机控制还是不太熟练，最主要是没有连接...</p>
+                    <div>来自于&nbsp;骆勇 &nbsp;的评价</div>
+                    <a href="">米家压力IH电饭煲</a>
+                    l<span>999元</span>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="picture/buzz_04.gif"></a>
+                <div>
+                    <p>真的非常喜欢，从包装到内在都很美，爱不释手</p>
+                    <div>来自于&nbsp;jiangnanjiang 的评价的评价;</div>
+                    <a href="">90分旅行箱 20寸</a>
+                    l<span>299元</span>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <!--******热评产品结束******-->
+
+    <!--视频模块开始-->
+    <div id="movies" class="clearfix">
+        <a class="rt">
+            产看全部<b>></b>
+        </a>
+        <h2 class="lt">视频</h2>
+        <ul>
+            <li>
+                <a href="#"><img src="picture/mov_01.gif"></a>
+                <p>
+                    <a href="#">小米5s“暗夜之眼”中的《香港纪实》</a>
+                </p>
+                <span>更锐利、细腻的创作利器</span>
+            </li>
+            <li>
+                <a href="#"><img src="picture/mov_02.gif"></a>
+                <p>
+                    <a href="#">红米年度品牌视频</a>
+                </p>
+                <span>一亿人喜爱你，是一种责任。</span>
+            </li>
+            <li>
+                <a href="#"><img src="picture/mov_03.gif"></a>
+                <p>
+                    <a href="#">小米笔记本Air可靠性测试视频</a>
+                </p>
+                <span>小米笔记本Air是如何炼成的？</span>
+            </li>
+            <li>
+                <a href="#"><img src="picture/move_04.jpg"></a>
+                <p>
+                    <a href="#">小米Max 绝美外观视频</a>
+                </p>
+                <span>6.44" 大屏黄金尺寸，看什么都震撼</span>
+            </li>
+        </ul>
+    </div>
+    <!--视频模块结束-->
+
 </div>
+<!--主体结束-->
 
-<!--*******小米闪购结束*******-->
-
-<!------------主体--------------->
-<!--<section>-->
-<!--    &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;//一小米明星&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-<!--    <div id="star">-->
-<!--        <div>-->
-<!--            <p class="rt">-->
-
-<!--            </p>-->
-<!--            <h2 class="lt">小米明星单品</h2>-->
-<!--        </div>-->
-<!--        <div class="star_dl">-->
-<!--            <dl class="s1">-->
-<!--                <dt>-->
-<!--                    <a href=""><img src="picture/star_01.gif"/></a>-->
-<!--                </dt>-->
-<!--                <dd>-->
-<!--                    <h4><a href="">小米电视3s-->
-<!--                        48英寸</a></h4>-->
-<!--                    <p>原装液晶屏&nbsp;金属机身</p>-->
-<!--                </dd>-->
-<!--                <dd class="Ltc">1999元</dd>-->
-<!--            </dl>-->
-<!--            <dl class="s2">-->
-<!--                <dt>-->
-<!--                    <a href=""><img src="picture/star_02.gif"/></a>-->
-<!--                </dt>-->
-<!--                <dd>-->
-<!--                    <h4><a href="">小米电视3s-->
-<!--                        48英寸</a></h4>-->
-<!--                    <p>原装液晶屏&nbsp;金属机身</p>-->
-<!--                </dd>-->
-<!--                <dd class="Ltc">1999元</dd>-->
-<!--            </dl>-->
-<!--            <dl class="s3">-->
-<!--                <dt>-->
-<!--                    <a href=""><img src="picture/star_03.gif"/></a>-->
-<!--                </dt>-->
-<!--                <dd>-->
-<!--                    <h4><a href="">小米电视3s-->
-<!--                        48英寸</a></h4>-->
-<!--                    <p>原装液晶屏&nbsp;金属机身</p>-->
-<!--                </dd>-->
-<!--                <dd class="Ltc">1999元</dd>-->
-<!--            </dl>-->
-<!--            <dl class="s4">-->
-<!--                <dt>-->
-<!--                    <a href=""><img src="picture/star_04.gif"/></a>-->
-<!--                </dt>-->
-<!--                <dd>-->
-<!--                    <h4><a href="">小米电视3s-->
-<!--                        48英寸</a></h4>-->
-<!--                    <p>原装液晶屏&nbsp;金属机身</p>-->
-<!--                </dd>-->
-<!--                <dd class="Ltc">1999元</dd>-->
-<!--            </dl>-->
-<!--            <dl class="s5">-->
-<!--                <dt>-->
-<!--                    <a href=""><img src="picture/star_05.gif"/></a>-->
-<!--                </dt>-->
-<!--                <dd>-->
-<!--                    <h4><a href="">小米电视3s-->
-<!--                        48英寸</a></h4>-->
-<!--                    <p>原装液晶屏&nbsp;金属机身</p>-->
-<!--                </dd>-->
-<!--                <dd class="Ltc">1999元</dd>-->
-<!--            </dl>-->
-<!--            &lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;小米明星产品 6-10-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;-&#45;&#45;&#45;&#45;//二-智能硬件-&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-<!--    <div id="product_hardware">-->
-<!--        <a class="rt" href="">查看全部<b>&gt;</b></a>-->
-<!--        <h2>智能硬件</h2>-->
-<!--        <a class="prHe" href=""><img src="picture/product_hardware_01.jpg"></a>-->
-<!--        <ul id="hardware">-->
-<!--            <li>-->
-<!--                <div>免邮费</div>-->
-<!--                <a href=""><img src="picture/product_hardware_02.jpg"></a>-->
-<!--                <h4><a href="">小米路由器3</a></h4>-->
-<!--                <p>四线设计，更安全更稳定</p>-->
-<!--                <span>&yen;149元</span>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>免邮费</div>-->
-<!--                <a href=""><img src="picture/product_hardware_03.jpg"></a>-->
-<!--                <h4><a href="">电助力折叠自行车</a></h4>-->
-<!--                <p>力矩传感电助力，折叠便携设计</p>-->
-<!--                <span>&yen;2999元</span>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>免邮费</div>-->
-<!--                <a href=""><img src="picture/product_hardware_04.jpg"></a>-->
-<!--                <h4><a href="">小米VR眼睛玩具版</a></h4>-->
-<!--                <p>观看新体验，期待总于意料之外</p>-->
-<!--                <span>&yen;49元</span>-->
-<!--            </li>-->
-
-<!--            <li class="no_banner">-->
-<!--                <a href=""><img src="picture/product_hardware_05.jpg"></a>-->
-<!--                <h4><a href="">九号平衡车</a></h4>-->
-<!--                <p>年轻人的酷玩具，骑行遥控两种玩法</p>-->
-<!--                <span>&yen;1999元</span>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>新品</div>-->
-<!--                <a href=""><img src="picture/product_hardware_06.jpg"></a>-->
-<!--                <h4><a href="">米兔智能故事机</a></h4>-->
-<!--                <p>宝又不好好吃饭，让米兔来哄宝宝吧</p>-->
-<!--                <span>&yen;199元</span>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>免邮费</div>-->
-<!--                <a href=""><img src="picture/product_hardware_07.jpg"></a>-->
-<!--                <h4><a href="">米家压力IH电饭煲</a></h4>-->
-<!--                <p>IH电磁环绕加热，让米粒在锅中跳舞</p>-->
-<!--                <span>&yen;999元</span>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>新品</div>-->
-<!--                <a href=""><img src="picture/product_hardware_08.jpg"></a>-->
-<!--                <h4><a href="">小米笔记本Air12.5英寸</a></h4>-->
-<!--                <p>更轻更薄，想杂志一样随身携带</p>-->
-<!--                <span>&yen;3499元</span>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>新品</div>-->
-<!--                <a href=""><img src="picture/product_hardware_09.jpg"></a>-->
-<!--                <h4><a href="">米家&nbsp;LED&nbsp;智能台灯</a></h4>-->
-<!--                <p>无可视频闪，亮度色温无级调节</p>-->
-<!--                <span>&yen;169元</span>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;//三-&#45;&#45;搭配&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-<!--    <div id="pd_match">-->
-<!--        <div class="top">-->
-<!--            <ul class="rt">-->
-<!--                <li><a href="#tc1">热门</a></li>-->
-<!--                <li><a href="#tc2">耳机音响</a></li>-->
-<!--                <li><a href="#tc3">电源</a></li>-->
-<!--                <li><a href="#tc4">电池存储器</a></li>-->
-<!--            </ul>-->
-<!--            <h2 class="lt">搭配</h2>-->
-<!--        </div>-->
-<!--        <ul id="tc1" class="rt_li">-->
-<!--            <a class="lt" href="#"><img src="picture/left_01.jpg"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_01.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH</a></h4>-->
-<!--                <span>&yen;79元</span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_02.gif"></a>-->
-<!--                <h4><a href="">小米圈铁耳机</a></h4>-->
-<!--                <span>&yen;99元</span>-->
-<!--                <p>1.7万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_03.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH-->
-<!--                    高配版</a></h4>-->
-<!--                <span>&yen;149元</span>-->
-<!--                <p>2.3万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_04.gif"></a>-->
-<!--                <h4><a href="">小米蓝牙耳机</a></h4>-->
-<!--                <span>&yen;69元<s>70元</s></span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <a class="lt" href="#"><img src="picture/left_02.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_05.gif"></a>-->
-<!--                <h4><a href="">小米插线板</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>25.2万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_06.gif"></a>-->
-<!--                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>-->
-<!--                <span>&yen;129元</span>-->
-<!--                <p>1.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_07.gif"></a>-->
-<!--                <h4><a href="">小米移动电源5000mAH</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>9.1万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_01.gif"></a>-->
-<!--                    <span><a href="#">小米钢炮.....</a></span>-->
-<!--                    <p>99元 </p>-->
-
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_00.gif"></a>-->
-<!--                    <h3><a href="#">浏览更多</a></h3>-->
-<!--                    <p>热门 </p>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--        <ul id="tc2" class="rt_li">-->
-<!--            <a class="lt" href="#"><img src="picture/left_01.jpg"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_01.gif"></a>-->
-<!--                <h4><a href="">小米移动2</a></h4>-->
-<!--                <span>&yen;79元</span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_02.gif"></a>-->
-<!--                <h4><a href="">小米圈2</a></h4>-->
-<!--                <span>&yen;99元</span>-->
-<!--                <p>1.7万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_03.gif"></a>-->
-<!--                <h4><a href="">小米移动2-->
-<!--                    高配版</a></h4>-->
-<!--                <span>&yen;149元</span>-->
-<!--                <p>2.3万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_04.gif"></a>-->
-<!--                <h4><a href="">小米蓝牙2</a></h4>-->
-<!--                <span>&yen;69元<s>70元</s></span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <a class="lt" href="#"><img src="picture/left_02.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_05.gif"></a>-->
-<!--                <h4><a href="">小米插线板</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>25.2万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_06.gif"></a>-->
-<!--                <h4><a href="">小米小钢炮22</a></h4>-->
-<!--                <span>&yen;129元</span>-->
-<!--                <p>1.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_07.gif"></a>-->
-<!--                <h4><a href="">小米移动2H</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>9.1万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_01.gif"></a>-->
-<!--                    <span><a href="#">小2.....</a></span>-->
-<!--                    <p>99元 </p>-->
-
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_00.gif"></a>-->
-<!--                    <h3><a href="#">浏览更多</a></h3>-->
-<!--                    <p>热门 </p>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--        <ul id="tc3" class="rt_li">-->
-<!--            <a class="lt" href="#"><img src="picture/left_01.jpg"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_06.gif"></a>-->
-<!--                <h4><a href="">小米移动电3H</a></h4>-->
-<!--                <span>&yen;79元</span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_07.gif"></a>-->
-<!--                <h4><a href="">小米3</a></h4>-->
-<!--                <span>&yen;99元</span>-->
-<!--                <p>1.7万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_05.gif"></a>-->
-<!--                <h4><a href="">小米3H-->
-<!--                    高配版</a></h4>-->
-<!--                <span>&yen;149元</span>-->
-<!--                <p>2.3万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_03.gif"></a>-->
-<!--                <h4><a href="">小米蓝3机</a></h4>-->
-<!--                <span>&yen;69元<s>70元</s></span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <a class="lt" href="#"><img src="picture/left_02.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_04.gif"></a>-->
-<!--                <h4><a href="">小3板</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>25.2万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_02.gif"></a>-->
-<!--                <h4><a href="">小米小3响2</a></h4>-->
-<!--                <span>&yen;129元</span>-->
-<!--                <p>1.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_01.gif"></a>-->
-<!--                <h4><a href="">小米移动电3AH</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>9.1万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_01.gif"></a>-->
-<!--                    <span><a href="#">小米3.....</a></span>-->
-<!--                    <p>99元 </p>-->
-
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_00.gif"></a>-->
-<!--                    <h3><a href="#">浏览3多</a></h3>-->
-<!--                    <p>热门 </p>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--        <ul id="tc4" class="rt_li">-->
-<!--            <a class="lt" href="#"><img src="picture/left_01.jpg"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_02.gif"></a>-->
-<!--                <h4><a href="">小米移动4</a></h4>-->
-<!--                <span>&yen;79元</span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_04.gif"></a>-->
-<!--                <h4><a href="">小米4机</a></h4>-->
-<!--                <span>&yen;99元</span>-->
-<!--                <p>1.7万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_05.gif"></a>-->
-<!--                <h4><a href="">小米移4H-->
-<!--                    高配版</a></h4>-->
-<!--                <span>&yen;149元</span>-->
-<!--                <p>2.3万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_04.gif"></a>-->
-<!--                <h4><a href="">小米蓝4</a></h4>-->
-<!--                <span>&yen;69元<s>70元</s></span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <a class="lt" href="#"><img src="picture/left_02.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_05.gif"></a>-->
-<!--                <h4><a href="">小米4板</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>25.2万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_05.gif"></a>-->
-<!--                <h4><a href="">小米小钢4音响2</a></h4>-->
-<!--                <span>&yen;129元</span>-->
-<!--                <p>1.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_match_04.gif"></a>-->
-<!--                <h4><a href="">小米移动4mAH</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>9.1万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_01.gif"></a>-->
-<!--                    <span><a href="#">小米4.</a></span>-->
-<!--                    <p>99元 </p>-->
-
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_00.gif"></a>-->
-<!--                    <h3><a href="#">浏览更多</a></h3>-->
-<!--                    <p>热门 </p>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;//四-&#45;&#45;配件&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-<!--    <div id="pd_parts">-->
-<!--        <div class="top">-->
-<!--            <ul class="rt">-->
-<!--                <li><a href="#pj1">热门</a></li>-->
-<!--                <li><a href="#pj2">保护套</a></li>-->
-<!--                <li><a href="#pj3">贴膜</a></li>-->
-<!--                <li><a href="#pj4">其他配件</a></li>-->
-<!--            </ul>-->
-<!--            <h2 class="lt">配件</h2>-->
-<!--        </div>-->
-<!--        <ul id="pj1" class="rt_li">-->
-<!--            <a class="lt" href="#"><img src="picture/left_03.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_07.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH</a></h4>-->
-<!--                <span>&yen;79元</span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_06.gif"></a>-->
-<!--                <h4><a href="">小米圈铁耳机</a></h4>-->
-<!--                <span>&yen;99元</span>-->
-<!--                <p>1.7万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_05.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH-->
-<!--                    高配版</a></h4>-->
-<!--                <span>&yen;149元</span>-->
-<!--                <p>2.3万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_04.gif"></a>-->
-<!--                <h4><a href="">小米蓝牙耳机</a></h4>-->
-<!--                <span>&yen;69元<s>70元</s></span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <a class="lt" href="#"><img src="picture/left_04.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_03.gif"></a>-->
-<!--                <h4><a href="">小米插线板</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>25.2万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_02.gif"></a>-->
-<!--                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>-->
-<!--                <span>&yen;129元</span>-->
-<!--                <p>1.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_01.gif"></a>-->
-<!--                <h4><a href="">小米移动电源5000mAH</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>9.1万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_02.gif"></a>-->
-<!--                    <span><a href="#">小米钢炮.....</a></span>-->
-<!--                    <p>99元 </p>-->
-
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_00.gif"></a>-->
-<!--                    <h3><a href="#">浏览更多</a></h3>-->
-<!--                    <p>热门 </p>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--        <ul id="pj2" class="rt_li">-->
-<!--            <a class="lt" href="#"><img src="picture/left_03.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_02.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH</a></h4>-->
-<!--                <span>&yen;79元</span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_01.gif"></a>-->
-<!--                <h4><a href="">小米圈铁耳机</a></h4>-->
-<!--                <span>&yen;99元</span>-->
-<!--                <p>1.7万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_04.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH-->
-<!--                    高配版</a></h4>-->
-<!--                <span>&yen;149元</span>-->
-<!--                <p>2.3万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_03.gif"></a>-->
-<!--                <h4><a href="">小米蓝牙耳机</a></h4>-->
-<!--                <span>&yen;69元<s>70元</s></span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <a class="lt" href="#"><img src="picture/left_04.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_07.gif"></a>-->
-<!--                <h4><a href="">小米插线板</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>25.2万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_065.gif"></a>-->
-<!--                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>-->
-<!--                <span>&yen;129元</span>-->
-<!--                <p>1.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_06.gif"></a>-->
-<!--                <h4><a href="">小米移动电源5000mAH</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>9.1万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_02.gif"></a>-->
-<!--                    <span><a href="#">小米钢炮.....</a></span>-->
-<!--                    <p>99元 </p>-->
-
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_00.gif"></a>-->
-<!--                    <h3><a href="#">浏览更多</a></h3>-->
-<!--                    <p>热门 </p>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--        <ul id="pj3" class="rt_li">-->
-<!--            <a class="lt" href="#"><img src="picture/left_03.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_01.gif"></a>-->
-<!--                <h4><a href="">小米移动3H</a></h4>-->
-<!--                <span>&yen;79元</span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_02.gif"></a>-->
-<!--                <h4><a href="">小米圈3机</a></h4>-->
-<!--                <span>&yen;99元</span>-->
-<!--                <p>1.7万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_03.gif"></a>-->
-<!--                <h4><a href="">小米移动300mAH-->
-<!--                    高配版</a></h4>-->
-<!--                <span>&yen;149元</span>-->
-<!--                <p>2.3万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_04.gif"></a>-->
-<!--                <h4><a href="">小米蓝牙耳机</a></h4>-->
-<!--                <span>&yen;69元<s>70元</s></span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <a class="lt" href="#"><img src="picture/left_04.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_05.gif"></a>-->
-<!--                <h4><a href="">小3板</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>25.2万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_06.gif"></a>-->
-<!--                <h4><a href="">小米小钢炮32</a></h4>-->
-<!--                <span>&yen;129元</span>-->
-<!--                <p>1.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_07.gif"></a>-->
-<!--                <h4><a href="">小米移3H</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>9.1万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_02.gif"></a>-->
-<!--                    <span><a href="#">小米钢炮.....</a></span>-->
-<!--                    <p>99元 </p>-->
-
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_00.gif"></a>-->
-<!--                    <h3><a href="#">浏览更多</a></h3>-->
-<!--                    <p>热门 </p>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--        <ul id="pj4" class="rt_li">-->
-<!--            <a class="lt" href="#"><img src="picture/left_03.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_01.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH</a></h4>-->
-<!--                <span>&yen;79元</span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_02.gif"></a>-->
-<!--                <h4><a href="">小米圈铁耳机</a></h4>-->
-<!--                <span>&yen;99元</span>-->
-<!--                <p>1.7万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_03.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH-->
-<!--                    高配版</a></h4>-->
-<!--                <span>&yen;149元</span>-->
-<!--                <p>2.3万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_04.gif"></a>-->
-<!--                <h4><a href="">小米蓝牙耳机</a></h4>-->
-<!--                <span>&yen;69元<s>70元</s></span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <a class="lt" href="#"><img src="picture/left_04.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_05.gif"></a>-->
-<!--                <h4><a href="">小米插线板</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>25.2万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_06.gif"></a>-->
-<!--                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>-->
-<!--                <span>&yen;129元</span>-->
-<!--                <p>1.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/product_accessories_07.gif"></a>-->
-<!--                <h4><a href="">小米移动电源5000mAH</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>9.1万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_02.gif"></a>-->
-<!--                    <span><a href="#">小米钢炮.....</a></span>-->
-<!--                    <p>99元 </p>-->
-
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_00.gif"></a>-->
-<!--                    <h3><a href="#">浏览更多</a></h3>-->
-<!--                    <p>热门 </p>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;//五&#45;&#45;周边-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-<!--    <div id="pd_circum">-->
-<!--        <div class="top">-->
-<!--            <ul class="rt">-->
-<!--                <li><a href="#zb1">热门</a></li>-->
-<!--                <li><a href="#zb2">服装</a></li>-->
-<!--                <li><a href="#zb3">米兔</a></li>-->
-<!--                <li><a href="#zb4">生活周边</a></li>-->
-<!--                <li><a href="#zb5">箱包</a></li>-->
-<!--            </ul>-->
-<!--            <h2 class="lt">周边</h2>-->
-<!--        </div>-->
-<!--        <ul id="zb1" class="rt_li">-->
-<!--            <a class="lt" href="#"><img src="picture/left_05.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_07.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH</a></h4>-->
-<!--                <span>&yen;79元</span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_02.gif"></a>-->
-<!--                <h4><a href="">小米圈铁耳机</a></h4>-->
-<!--                <span>&yen;99元</span>-->
-<!--                <p>1.7万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_03.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH-->
-<!--                    高配版</a></h4>-->
-<!--                <span>&yen;149元</span>-->
-<!--                <p>2.3万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_04.gif"></a>-->
-<!--                <h4><a href="">小米蓝牙耳机</a></h4>-->
-<!--                <span>&yen;69元<s>70元</s></span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <a class="lt" href="#"><img src="picture/left_06.jpg"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_05.gif"></a>-->
-<!--                <h4><a href="">小米插线板</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>25.2万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_06.gif"></a>-->
-<!--                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>-->
-<!--                <span>&yen;129元</span>-->
-<!--                <p>1.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_07.gif"></a>-->
-<!--                <h4><a href="">小米移动电源5000mAH</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>9.1万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_03.gif"></a>-->
-<!--                    <span><a href="#">小米钢炮.....</a></span>-->
-<!--                    <p>99元 </p>-->
-
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_00.gif"></a>-->
-<!--                    <h3><a href="#">浏览更多</a></h3>-->
-<!--                    <p>热门 </p>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--        <ul id="zb2" class="rt_li">-->
-<!--            <a class="lt" href="#"><img src="picture/left_05.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_03.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH</a></h4>-->
-<!--                <span>&yen;79元</span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_02.gif"></a>-->
-<!--                <h4><a href="">小米圈铁耳机</a></h4>-->
-<!--                <span>&yen;99元</span>-->
-<!--                <p>1.7万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_01.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH-->
-<!--                    高配版</a></h4>-->
-<!--                <span>&yen;149元</span>-->
-<!--                <p>2.3万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_04.gif"></a>-->
-<!--                <h4><a href="">小米蓝牙耳机</a></h4>-->
-<!--                <span>&yen;69元<s>70元</s></span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <a class="lt" href="#"><img src="picture/left_07.jpg"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_04.gif"></a>-->
-<!--                <h4><a href="">小米插线板</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>25.2万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_02.gif"></a>-->
-<!--                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>-->
-<!--                <span>&yen;129元</span>-->
-<!--                <p>1.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_03.gif"></a>-->
-<!--                <h4><a href="">小米移动电源5000mAH</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>9.1万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_03.gif"></a>-->
-<!--                    <span><a href="#">小米钢炮.....</a></span>-->
-<!--                    <p>99元 </p>-->
-
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_00.gif"></a>-->
-<!--                    <h3><a href="#">浏览更多</a></h3>-->
-<!--                    <p>热门 </p>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--        <ul id="zb3" class="rt_li">-->
-<!--            <a class="lt" href="#"><img src="picture/left_05.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_04.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH</a></h4>-->
-<!--                <span>&yen;79元</span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_04.gif"></a>-->
-<!--                <h4><a href="">小米圈铁耳机</a></h4>-->
-<!--                <span>&yen;99元</span>-->
-<!--                <p>1.7万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_03.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH-->
-<!--                    高配版</a></h4>-->
-<!--                <span>&yen;149元</span>-->
-<!--                <p>2.3万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_03.gif"></a>-->
-<!--                <h4><a href="">小米蓝牙耳机</a></h4>-->
-<!--                <span>&yen;69元<s>70元</s></span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <a class="lt" href="#"><img src="picture/left_01.jpg"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_05.gif"></a>-->
-<!--                <h4><a href="">小米插线板</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>25.2万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_06.gif"></a>-->
-<!--                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>-->
-<!--                <span>&yen;129元</span>-->
-<!--                <p>1.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_07.gif"></a>-->
-<!--                <h4><a href="">小米移动电源5000mAH</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>9.1万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_03.gif"></a>-->
-<!--                    <span><a href="#">小米钢炮.....</a></span>-->
-<!--                    <p>99元 </p>-->
-
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_00.gif"></a>-->
-<!--                    <h3><a href="#">浏览更多</a></h3>-->
-<!--                    <p>热门 </p>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--        <ul id="zb4" class="rt_li">-->
-<!--            <a class="lt" href="#"><img src="picture/left_05.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_03.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH</a></h4>-->
-<!--                <span>&yen;79元</span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_01.gif"></a>-->
-<!--                <h4><a href="">小米圈铁耳机</a></h4>-->
-<!--                <span>&yen;99元</span>-->
-<!--                <p>1.7万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_05.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH-->
-<!--                    高配版</a></h4>-->
-<!--                <span>&yen;149元</span>-->
-<!--                <p>2.3万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_04.gif"></a>-->
-<!--                <h4><a href="">小米蓝牙耳机</a></h4>-->
-<!--                <span>&yen;69元<s>70元</s></span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <a class="lt" href="#"><img src="picture/left_06.jpg"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_05.gif"></a>-->
-<!--                <h4><a href="">小米插线板</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>25.2万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_04.gif"></a>-->
-<!--                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>-->
-<!--                <span>&yen;129元</span>-->
-<!--                <p>1.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_05.gif"></a>-->
-<!--                <h4><a href="">小米移动电源5000mAH</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>9.1万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_03.gif"></a>-->
-<!--                    <span><a href="#">小米钢炮.....</a></span>-->
-<!--                    <p>99元 </p>-->
-
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_00.gif"></a>-->
-<!--                    <h3><a href="#">浏览更多</a></h3>-->
-<!--                    <p>热门 </p>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--        <ul id="zb5" class="rt_li">-->
-<!--            <a class="lt" href="#"><img src="picture/left_05.gif"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_01.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH</a></h4>-->
-<!--                <span>&yen;79元</span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_02.gif"></a>-->
-<!--                <h4><a href="">小米圈铁耳机</a></h4>-->
-<!--                <span>&yen;99元</span>-->
-<!--                <p>1.7万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_03.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH-->
-<!--                    高配版</a></h4>-->
-<!--                <span>&yen;149元</span>-->
-<!--                <p>2.3万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_04.gif"></a>-->
-<!--                <h4><a href="">小米蓝牙耳机</a></h4>-->
-<!--                <span>&yen;69元<s>70元</s></span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <a class="lt" href="#"><img src="picture/left_06.jpg"></a>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_05.gif"></a>-->
-<!--                <h4><a href="">小米插线板</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>25.2万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_06.gif"></a>-->
-<!--                <h4><a href="">小米小钢炮蓝牙音响2</a></h4>-->
-<!--                <span>&yen;129元</span>-->
-<!--                <p>1.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/surrounding_07.gif"></a>-->
-<!--                <h4><a href="">小米移动电源5000mAH</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>9.1万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_03.gif"></a>-->
-<!--                    <span><a href="#">小米钢炮.....</a></span>-->
-<!--                    <p>99元 </p>-->
-
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <a class="rt" href=""><img src="picture/right_00.gif"></a>-->
-<!--                    <h3><a href="#">浏览更多</a></h3>-->
-<!--                    <p>热门 </p>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;//六&#45;&#45;为你推荐-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-<!--    <div id="recommended">-->
-<!--        <div class="top">-->
-<!--            <b class="rt"></b>-->
-<!--            <h2 class="lt">为你推荐</h2>-->
-<!--        </div>-->
-<!--        <ul class="rt_li">-->
-
-<!--            <li style="margin-left:0;">-->
-<!--                <a href=""><img src="picture/recommended_01.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH</a></h4>-->
-<!--                <span>&yen;79元</span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/recommended_02.gif"></a>-->
-<!--                <h4><a href="">小米圈铁耳机</a></h4>-->
-<!--                <span>&yen;99元</span>-->
-<!--                <p>1.7万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/recommended_03.gif"></a>-->
-<!--                <h4><a href="">小米移动电源10000mAH-->
-<!--                    高配版</a></h4>-->
-<!--                <span>&yen;149元</span>-->
-<!--                <p>2.3万人评价</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href=""><img src="picture/recommended_04.gif"></a>-->
-<!--                <h4><a href="">小米蓝牙耳机</a></h4>-->
-<!--                <span>&yen;69元<s>70元</s></span>-->
-<!--                <p>19.6万人评价</p>-->
-<!--            </li>-->
-<!--            <li style="margin-left:11px;">-->
-<!--                <a href=""><img src="picture/recommended_05.gif"></a>-->
-<!--                <h4><a href="">小米插线板</a></h4>-->
-<!--                <span>&yen;49元</span>-->
-<!--                <p>25.2万人评价</p>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--    <div id="buzz">-->
-<!--        <h2>热评产品</h2>-->
-<!--        <ul>-->
-<!--            <li>-->
-<!--                <a href="#"><img src="picture/buzz_01.gif"></a>-->
-<!--                <div>-->
-<!--                    <p>刚收到，外观很漂亮，颜色也很喜欢，等了好长时间了，终于拿到了，非常满意，棒棒哒！！！</p>-->
-<!--                    <div>来自于&nbsp;龙炎&nbsp;的评价</div>-->
-<!--                    <a href="">小米笔记本Air&nbsp;12.5英寸</a>-->
-<!--                    l<span>3499元</span>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href="#"><img src="picture/buzz_02.gif"></a>-->
-<!--                <div>-->
-<!--                    <p>很好！特别是，拦截功能，智能管控……随时随地知道家中网络情况……</p>-->
-<!--                    <div>来自于&nbsp;HZG&nbsp;的评价</div>-->
-<!--                    <a href="">小米路由器3</a>-->
-<!--                    l<span>149元</span>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href="#"><img src="picture/buzz_03.gif"></a>-->
-<!--                <div>-->
-<!--                    <p>包装很让人感动，式样也很可爱，做出的饭全家人都爱吃，超爱五星！手机控制还是不太熟练，最主要是没有连接...</p>-->
-<!--                    <div>来自于&nbsp;骆勇 &nbsp;的评价</div>-->
-<!--                    <a href="">米家压力IH电饭煲</a>-->
-<!--                    l<span>999元</span>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href="#"><img src="picture/buzz_04.gif"></a>-->
-<!--                <div>-->
-<!--                    <p>真的非常喜欢，从包装到内在都很美，爱不释手</p>-->
-<!--                    <div>来自于&nbsp;jiangnanjiang 的评价的评价;</div>-->
-<!--                    <a href="">90分旅行箱 20寸</a>-->
-<!--                    l<span>299元</span>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--</section>-->
-<!--<div id="movies">-->
-<!--    <a class="rt">-->
-<!--        产看全部<b>></b>-->
-<!--    </a>-->
-<!--    <h2 class="lt">视频</h2>-->
-<!--    <ul>-->
-<!--        <li>-->
-<!--            <a href="#"><img src="picture/mov_01.gif"></a>-->
-<!--            <p>-->
-<!--                <a href="#">小米5s“暗夜之眼”中的《香港纪实》</a>-->
-<!--            </p>-->
-<!--            <span>更锐利、细腻的创作利器</span>-->
-<!--        </li>-->
-<!--        <li>-->
-<!--            <a href="#"><img src="picture/mov_02.gif"></a>-->
-<!--            <p>-->
-<!--                <a href="#">红米年度品牌视频</a>-->
-<!--            </p>-->
-<!--            <span>一亿人喜爱你，是一种责任。</span>-->
-<!--        </li>-->
-<!--        <li>-->
-<!--            <a href="#"><img src="picture/mov_03.gif"></a>-->
-<!--            <p>-->
-<!--                <a href="#">小米笔记本Air可靠性测试视频</a>-->
-<!--            </p>-->
-<!--            <span>小米笔记本Air是如何炼成的？</span>-->
-<!--        </li>-->
-<!--        <li>-->
-<!--            <a href="#"><img src="picture/move_04.jpg"></a>-->
-<!--            <p>-->
-<!--                <a href="#">小米Max 绝美外观视频</a>-->
-<!--            </p>-->
-<!--            <span>6.44" 大屏黄金尺寸，看什么都震撼</span>-->
-<!--        </li>-->
-<!--    </ul>-->
-<!--</div>-->
-
-
-
+<!--******小米售后开始*******-->
+<footer id="Customer">
+    <ul class="">
+        <li>
+            <a href=""><span></span>预约维修服务</a>
+        </li>
+        <span>丨</span>
+        <li>
+            <a href=""><span></span>7天无理由退货</a>
+        </li>
+        <span>丨</span>
+        <li>
+            <a href=""><span></span>15天免费换货</a>
+        </li>
+        <span>丨</span>
+        <li>
+            <a href=""><span></span>满150元包邮</a>
+        </li>
+        <span>丨</span>
+        <li>
+            <a href=""><span></span>520余家售后网点</a>
+        </li>
+    </ul>
+    <div id="hps">
+        <div class="rt">
+            <div>400-100-5678</div>
+            <p>周一至周日 8:00-18:00</p>
+            <p>（仅收市话费）</p>
+            <a href="#" class="hv">
+                <img src="picture/24h_03.jpg">
+            </a>
+        </div>
+        <ul class="help">
+            <li>
+                <h4>帮助中心</h4>
+                <a href="">账户管理</a>
+                <a href="">购物指南</a>
+                <a href="">订单操作</a>
+            </li>
+            <li>
+                <h4>服务支持</h4>
+                <a href="">售后政策</a>
+                <a href="">自助服务</a>
+                <a href="">相关下载</a>
+            </li>
+            <li>
+                <h4>线下门店</h4>
+                <a href="">小米之家</a>
+                <a href="">服务网点</a>
+                <a href="">零售网点</a>
+            </li>
+            <li>
+                <h4>关于小米</h4>
+                <a href="">了解小米</a>
+                <a href="">加入小米</a>
+                <a href="">联系我们</a>
+            </li>
+            <li>
+                <h4>关注我们</h4>
+                <a href="">新浪微博</a>
+                <a href="">小米部落</a>
+                <a href="">官方微信</a>
+            </li>
+            <li>
+                <h4>特色服务</h4>
+                <a href="">F码通道</a>
+                <a href="">小米移动</a>
+                <a href="">防伪查询</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<!--******小米售后开始*******-->
 
 
 <!--小米备案开始-->
 <footer id="ft">
     <div id="footer">
         <p class="lt"></p>
-        <div class="lt">
+        <div class="lt main">
             <a href="#">小米商城</a>丨
             <a href="#">MIUI</a>丨
+            <a href="#">米家</a>丨
             <a href="#">米聊</a>丨
-            <a href="#">多看书城</a>丨
-            <a href="#">小米路由器</a>丨
-            <a href="#">视频电话</a>丨
-            <a href="#">小米后院</a>丨
+            <a href="#">多看</a>丨
+            <a href="#">路由器</a>丨
+            <a href="#">米粉卡</a>丨
+            <a href="#">政企服务</a>丨
             <a href="#">小米天猫店</a>丨
-            <a href="#">小米淘宝直营店</a>丨
-            <a href="#">小米网盟</a>丨
+            <a href="#">小米集团隐私策略</a>丨
+            <a href="#">小米公司儿童信息保护规则</a>丨
+            <a href="#">小米商城隐私策论</a>丨
+            <a href="#">小米商城用户协议</a>丨
             <a href="#">问题反馈</a>丨
+            <a href="#">廉政举报</a>丨
+            <a href="#">诚信合规</a>丨
             <a href="#">Select Region</a>
             <p>
                 © mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2017]1530-131号 <br>
                 （京）网械平台备字（2018）第00005号 互联网药品信息服务资格证 (京) -非经营性-2014-0090 营业执照 医疗器械公告 <br>
-                增值电信业务许可证  网络食品经营备案（京）【2018】WLSPJYBAHF-12   食品经营许可证 <br>
+                增值电信业务许可证 网络食品经营备案（京）【2018】WLSPJYBAHF-12 食品经营许可证 <br>
                 违法和不良信息举报电话：185-0130-1238 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
             </p>
         </div>
+        <div class="info-links">
+            <a href="#"><img src="picture/v-logo-4.gif"></a>
+            <a href="#"><img src="picture/v-logo-1.png"></a>
+            <a href="#"><img src="picture/v-logo-2.png"></a>
+            <a href="#"><img src="picture/v-logo-3.png"></a>
+        </div>
+        <div class="bottom">
+            探索黑科技，小平为发烧而生！
+        </div>
     </div>
-    <span class="info-links">
-        <a  href="#"><img src="picture/v-logo-4.gif"></a>
-        <a href="#"><img src="picture/v-logo-1.png"></a>
-        <a href="#"><img src="picture/v-logo-2.png"></a>
-        <a href="#"><img src="picture/v-logo-3.png"></a>
-    </span>
-    <div class="btm"></div>
 </footer>
 <!--小米备案结束-->
 
+<div class="right-bar" >
+    <a href="#">
+        <span class="fa fa-mobile"></span>
+        <div>手机APP</div>
+    </a>
+    <a href="#">
+        <span class="fa fa-group"></span>
+        <div>个人中心</div>
+    </a>
+    <a href="#">
+        <span class="fa fa-cog"></span>
+        <div>售后服务</div>
+    </a>
+    <a href="#">
+        <span class="fa fa-headphones"></span>
+        <div>人工客服</div>
+    </a>
+    <a href="#">
+        <span class="fa fa-cart-plus"></span>
+        <div>购物车</div>
+    </a>
+    <a href="#top">
+        <span class="fa fa-arrow-up"></span>
+        <div>回到顶部</div>
+    </a>
+</div>
 
-
+<script src="./js/jquery.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/myPlugins.js"></script>
 <script src="js/projiect.js"></script>
+<script src="./js/tools.js"></script>
 
 </body>
 </html>
